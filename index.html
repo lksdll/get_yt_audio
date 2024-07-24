@@ -14,7 +14,7 @@
         document.getElementById('downloadButton').addEventListener('click', () => {
             const videoUrl = document.getElementById('videoUrl').value;
             if (videoUrl) {
-                window.location.href = `/download?url=${encodeURIComponent(videoUrl)}`;
+                window.location.href = `:3000/download?url=${encodeURIComponent(videoUrl)}`;
             } else {
                 alert('Please enter a valid YouTube video URL.');
             }
